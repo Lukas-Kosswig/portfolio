@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lukas Kosswig - Angehender Fachinformatiker Anwendungsentwicklung aus Minden, NRW.">
+  <title>Lukas Kosswig</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;1,14..32,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav aria-label="Hauptnavigation">
+  <a href="#" class="nav-brand" aria-label="Startseite">
+    <span class="prompt">~</span>
+    <span>lukas-kosswig.de</span>
+    <span class="nav-dot" aria-hidden="true"></span>
+    <span class="nav-live">live</span>
+  </a>
+  <ul>
+    <li><a href="#ueber">Über mich</a></li>
+    <li><a href="#kenntnisse">Kenntnisse</a></li>
+    <li><a href="#projekte">Projekte</a></li>
+    <li><a href="#kontakt">Kontakt</a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <section id="hero" aria-label="Einleitung">
+    <h1 class="hero-name">Lukas Kosswig<span class="cursor" aria-hidden="true"></span></h1>
+    <p class="hero-role">Angehender Fachinformatiker<br>Anwendungsentwicklung</p>
+    <p class="hero-meta">Minden, NRW &ndash; Ausbildungsstart August 2026</p>
+    <div class="hero-cta">
+      <a href="#kontakt" class="btn btn-fill">Kontakt aufnehmen</a>
+      <a href="#projekte" class="btn btn-outline">Projekte ansehen</a>
+    </div>
+  </section>
+
+  <hr class="sep">
+
+  <section id="ueber" class="reveal">
+    <p class="label">// über mich</p>
+    <p class="copy">
+      Ich bin 20 Jahre alt und schließe im Juli 2026 mein Fachabitur mit dem Schwerpunkt
+      Informationstechnik ab. Technik ist für mich mehr als Lehrplan: Ich betreibe meinen
+      eigenen Webserver auf einem Raspberry Pi, lerne durch echte Projekte und interessiere
+      mich für die Details hinter den Systemen, von der Netzwerkkonfiguration bis zum
+      sauberen Anwendungsdesign.
+    </p>
+    <div class="meta-grid">
+      <div class="meta-card">
+        <p class="meta-key">Ausbildung</p>
+        <p class="meta-val">Fachinformatiker AE</p>
+      </div>
+      <div class="meta-card">
+        <p class="meta-key">Start</p>
+        <p class="meta-val">August 2026</p>
+      </div>
+      <div class="meta-card">
+        <p class="meta-key">Standort</p>
+        <p class="meta-val">Minden, NRW</p>
+      </div>
+      <div class="meta-card">
+        <p class="meta-key">Abschluss</p>
+        <p class="meta-val">Fachabitur IT, Juli 2026</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="sep">
+
+  <section id="kenntnisse" class="reveal">
+    <p class="label">// kenntnisse</p>
+
+    <div class="skill-group">
+      <p class="skill-group-label">Entwicklung</p>
+      <div class="tags">
+        <span class="tag">Java</span>
+        <span class="tag">OOP</span>
+        <span class="tag">Design Patterns</span>
+        <span class="tag">HTML / CSS</span>
+        <span class="tag">Git</span>
+        <span class="tag">Datenbanken</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <p class="skill-group-label">Infrastruktur &amp; Systeme</p>
+      <div class="tags">
+        <span class="tag">Linux</span>
+        <span class="tag">nginx</span>
+        <span class="tag">SSL / TLS</span>
+        <span class="tag">Raspberry Pi</span>
+        <span class="tag">Netzwerktechnik</span>
+        <span class="tag">Server-Administration</span>
+      </div>
+    </div>
+  </section>
+
+  <hr class="sep">
+
+  <section id="projekte" class="reveal">
+    <p class="label">// projekte</p>
+    <div class="proj-list">
+
+      <div class="proj-card">
+        <div class="proj-top">
+          <h2 class="proj-title">Portfolio-Server</h2>
+          <span class="proj-badge">&#9679; live</span>
+        </div>
+        <p class="proj-desc">
+          Eigener Webserver auf einem Raspberry Pi, betrieben mit nginx und Let's Encrypt SSL.
+          Vollständig selbst eingerichtet und administriert, von der Netzwerkkonfiguration
+          bis zum automatischen Zertifikats-Renewal. Diese Website läuft darauf.
+        </p>
+        <div class="proj-footer">
+          <div class="proj-tags">
+            <span class="proj-tag">Raspberry Pi</span>
+            <span class="proj-tag">nginx</span>
+            <span class="proj-tag">SSL/TLS</span>
+            <span class="proj-tag">Linux</span>
+          </div>
+          <a href="https://github.com/Lukas-Kosswig/Portfolio-Website" target="_blank" rel="noopener" class="proj-link">GitHub &#x2197;</a>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-top">
+          <h2 class="proj-title">BlockSmash</h2>
+        </div>
+        <p class="proj-desc">
+          Gestartet als einfacher Pong-Test mit einem einzelnen Schläger. Eigenständig zu einem
+          vollständigen Block-Spiel weiterentwickelt: Blockstruktur, Kollisionslogik und
+          visuelles Spielfeld komplett selbst konzipiert und umgesetzt.
+        </p>
+        <div class="proj-footer">
+          <div class="proj-tags">
+            <span class="proj-tag">Java</span>
+            <span class="proj-tag">OOP</span>
+            <span class="proj-tag">Game Logic</span>
+          </div>
+          <a href="https://github.com/Lukas-Kosswig/BlockSmash" target="_blank" rel="noopener" class="proj-link">GitHub &#x2197;</a>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-top">
+          <h2 class="proj-title">Buchsortierer</h2>
+        </div>
+        <p class="proj-desc">
+          Ursprünglich ein reiner Sortieralgorithmus. Eigenständig um eine visuelle Darstellung
+          erweitert, die den Sortiervorgang nachvollziehbar macht. Fokus auf sauberer Trennung
+          von Logik und Ausgabe.
+        </p>
+        <div class="proj-footer">
+          <div class="proj-tags">
+            <span class="proj-tag">Java</span>
+            <span class="proj-tag">OOP</span>
+            <span class="proj-tag">Strategy Pattern</span>
+          </div>
+          <a href="https://github.com/Lukas-Kosswig/Buchsortierer" target="_blank" rel="noopener" class="proj-link">GitHub &#x2197;</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="sep">
+
+  <section id="kontakt" class="reveal">
+    <p class="label">// kontakt</p>
+    <p class="copy">Ich freue mich über Ausbildungsangebote und Anfragen. Am schnellsten erreichen Sie mich per E-Mail.</p>
+    <div class="contact-item">
+      <span class="c-icon">@</span>
+      <a href="mailto:lukas.kosswig@gmail.com">lukas.kosswig@gmail.com</a>
+    </div>
+    <div class="contact-item">
+      <span class="c-icon">&#x2197;</span>
+      <a href="https://lukas-kosswig.de" target="_blank" rel="noopener">lukas-kosswig.de</a>
+    </div>
+    <div class="contact-item">
+      <span class="c-icon">&#9677;</span>
+      <span>Minden, Nordrhein-Westfalen</span>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <span>&copy; 2026 Lukas Kosswig</span>
+  <span>Self-hosted on Raspberry Pi</span>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
